@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+    <%- include('layouts') %>
+    <div class="home-homepage">
+        <form class="form">
+            <div class="header">
+                <img src="./Images/Logo1.png" alt="logo" class="logo" />
+            </div>
+            <p class="title">Login</p>
+
+            <div class="input-container">
+                <input class="input" type="text" placeholder="Username" required />
+            </div>
+
+            <div class="input-container">
+                <input class="input" type="password" placeholder="Password" required />
+            </div>
+
+            <a class="submit" href="login.ejs?type=student">
+                Student
+            </a>
+            <a class="submit" href="login.ejs?type=mentor">
+                Mentor
+            </a>
+        </form>
+    </div>
+</body>
+</html>
