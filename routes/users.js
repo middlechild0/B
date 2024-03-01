@@ -5,7 +5,7 @@ const router = express.Router();
 router.get('/login', (req,res) => res.send('loginform'));
 
 //Register Page
-router.get('/register', (req,res) => res.render('signup'));
+router.get('/register', (req,res) => res.render('signupOptions'));
 
 
 module.exports = router;
