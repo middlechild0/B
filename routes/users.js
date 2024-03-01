@@ -1,8 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-//Login Page
-router.get('/login', (req,res) => res.send('loginform'));
+
+//LoginForm
+router.get('/loginForm', (req,res) => res.render('loginform'));
+
+//SignupForm
+router.get('/signupForm', (req,res) => res.render('signupform'));
 
 //SignupOption Page
 router.get('/signupOptions', (req,res) => res.render('signupOptions'));
