@@ -6,7 +6,8 @@ const app = express();
 app.use(expressLayouts);
 app.set('view engine','ejs');
 
-app.use(express.static( __dirname + '/public'));  //__dirname
+//__dirname
+app.use(express.static( __dirname + '/public'));
 
 //Routes
 app.use('/', require('./routes/index'));
