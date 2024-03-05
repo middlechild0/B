@@ -18,6 +18,10 @@ app.set('view engine','ejs');
 //__dirname
 app.use(express.static( __dirname + '/public'));
 
+
+//Bodyparser
+app.use(express.urlencoded({ extended: false}));
+
 //Routes
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));

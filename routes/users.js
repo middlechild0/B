@@ -19,4 +19,10 @@ router.get('/CompanyRegForm', (req,res) => res.render('CompanyRegForm'));
 //CompanyAdminLogin Page
 router.get('/CompanyAdminLogin', (req,res) => res.render('CompanyAdminLogin'));
 
+//Submit
+router.post('/submit'),(req.res) => {
+    console.log(req.body)
+    res.console.log('Hello');
+};
+
 module.exports = router;
