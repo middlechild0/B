@@ -7,30 +7,31 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <%- include('layout') %>
     <div class="home-homepage">
       <form class="form">
         <div class="header">
           <img
-            src="/frontend/home style sheet/Images/Logo1.png"
+            src="/public/Images/Logo1.png"
             alt="logo"
             class="logo"
           />
         </div>
         <p class="title">User</p>
-        <a class="submit" href="/frontend/login style sheet/login.html">
+        <a class="submit" href="/users/loginForm">
           Admin
         </a>
 
-        <a class="submit" href="/frontend/login style sheet/login.html">
+        <a class="submit" href="/users/loginForm">
           Student
         </a>
-        <a class="submit" href="/frontend/login style sheet/login.html">
+        <a class="submit" href="/users/loginForm">
           Mentor
         </a>
 
         <a
           class="submit"
-          href="/frontend/sign up style sheet/CompanySignin.html"
+          href="/users/CompanyAdminLogin"
         >
           Company
         </a>
