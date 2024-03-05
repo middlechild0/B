@@ -20,7 +20,7 @@ router.get('/CompanyRegForm', (req,res) => res.render('CompanyRegForm'));
 router.get('/CompanyAdminLogin', (req,res) => res.render('CompanyAdminLogin'));
 
 //Submit
-router.post('/submit'),(req.res) => {
+router.post('/submit'),(req.res) {
     console.log(req.body)
     res.console.log('Hello');
 };
