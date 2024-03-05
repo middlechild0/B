@@ -1,3 +1,3 @@
 module.exports = {
-    MongoURI: " mongodb+srv://BBIdatabase:trynottohackme@cluster0.10kq7gf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    MongoURI: " mongodb://atlas-sql-65df524dea3ede1459802279-k7inr.a.query.mongodb.net/myVirtualDatabase?ssl=true&authSource=admin"
 }
