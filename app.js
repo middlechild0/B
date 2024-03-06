@@ -1,16 +1,9 @@
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
-const mongoose = require('mongoose');
+
 
 const app = express();
 
-//DB Config
-const db = require('./config/keys').MongoURI;
-
-//Connect to Mongo
-mongoose.connect(db, { userNewUrlParser: true})
-    .then(() => console.log('MongoDB Connected..'))
-    .catch(err => console.log(err));
 //EJS
 app.use(expressLayouts);
 app.set('view engine','ejs');
@@ -19,8 +12,6 @@ app.set('view engine','ejs');
 app.use(express.static( __dirname + '/public'));
 
 
-//Bodyparser
-app.use(express.urlencoded({ extended: false}));
 
 //Routes
 app.use('/', require('./routes/index'));
