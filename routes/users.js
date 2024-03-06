@@ -19,6 +19,19 @@ router.get('/CompanyRegForm', (req,res) => res.render('CompanyRegForm'));
 //CompanyAdminLogin Page
 router.get('/CompanyAdminLogin', (req,res) => res.render('CompanyAdminLogin'));
 
+//resetPassword Page
+router.get('/resetPassword', (req,res) => res.render('resetPassword'));
+
+
+//CompanyHome Page
+router.get('/CompanyHome', (req,res) => res.render('CompanyHome'));
+
+//MentorsHome Page
+router.get('/MentorsHome', (req,res) => res.render('MentorsHome'));
+
+//StudentHome Page
+router.get('/StudentHome', (req,res) => res.render('StudentHome'));
+
 //Submit
 router.post('/submit'),(req.res) {
     console.log(req.body)
