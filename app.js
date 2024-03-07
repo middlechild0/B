@@ -3,10 +3,12 @@ const expressLayouts = require('express-ejs-layouts');
 const mysql = require('mysql2');
 const dotenv = require('dotenv');
 
+
 dotenv.config({path:'./.env'});
 
 const indexRouter = require('./routes/index.js');
 const usersRouter = require('./routes/users.js');
+const router = require('./routes/api.js');
 
 const app = express();
 
@@ -21,6 +23,8 @@ app.use(express.static(__dirname + '/public'));
 // Routes
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/', router);
+
 
 
 const PORT = process.env.PORT || 4000;

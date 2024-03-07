@@ -23,5 +23,5 @@ pool.getConnection()
     console.error('Error connecting to MySQL:', error);
   });
 
-export default pool;
+module.exports = {pool};
 
