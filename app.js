@@ -10,21 +10,6 @@ const usersRouter = require('./routes/users.js');
 
 const app = express();
 
-// Linking to the database
-const pool = mysql.createPool({
-    host: process.env.MYSQL_HOST,
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DATABASE,
-}).promise();
-
-pool.getConnection((err, connection) => {
-    if (err) {
-        console.error('Error connecting to database:', err);
-    } else {
-        console.log("MySQL Connected...");
-        getConnection.release(); }
-});
 
 // EJS
 app.use(expressLayouts);
