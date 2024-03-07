@@ -36,5 +36,9 @@ router.get('/StudentHome', (req,res) => res.render('StudentHome'));
 router.get('/StudentApplication', (req,res) => res.render('StudentApplication'));
 
 
+router.post('/submit', (req, res) => {
+    console.log(req.body);
+    res.send('Hello');
+});
 
 module.exports = router;
