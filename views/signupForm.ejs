@@ -11,7 +11,7 @@
 <body>
 <%- include('layout') %>
 <div class="home-homepage">
-    <form class="form" id="formData">
+    <form class="form" id="formData" action="/users/signupForm" method="post" enctype="multipart/form-data">
         <div class="header">
           <img
             src="/Images/logo-no-background.png"
@@ -81,7 +81,7 @@
             <option value="Student">Student</option>
             <option value="Mentor">Mentor</option>
         </select>
-        <button type="button" onclick="sendAPIRequest()">Submit</button>
+        <button class="submit"type="button" onclick="sendAPIRequest()">Submit</button>
 
         <p class="signin">
             Already have an acount

@@ -1,4 +1,5 @@
-const { model } = require('mongoose');
+const express = require('express');
+const app =  express();
 const pool = require ('../config/config.js');
 
 // get connection to db helper function
