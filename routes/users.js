@@ -32,10 +32,9 @@ router.get('/MentorsHome', (req,res) => res.render('MentorsHome'));
 //StudentHome Page
 router.get('/StudentHome', (req,res) => res.render('StudentHome'));
 
-//Submit
-router.post('/submit'),(req.res) {
-    console.log(req.body)
-    res.console.log('Hello');
-};
+//StudentApplication Page
+router.get('/StudentApplication', (req,res) => res.render('StudentApplication'));
+
+
 
 module.exports = router;

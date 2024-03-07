@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/Images/Logo1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/application.css" />
+    <title>Students Details</title>
+  </head>
+  <body>
+    <%- include('layout') %>
+    <div class="container">
+      <div class="header">
+        <img src="/Images/logo-no-background.png" alt="" class="logo" />
+      </div>
+      <h2>Fill this form to continue</h2>
+      <form
+        action="/submit_details"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <label for="course">Choose a Course:</label>
+        <select id="course" name="course" required>
+          <option value="">Select Course</option>
+          <option value="computer_science">Computer Science</option>
+          <option value="engineering">Engineering</option>
+          <option value="business">Business</option>
+          <option value="medicine">Medicine</option>
+          <!-- Add more options as needed -->
+        </select>
+
+        <label for="job">Apply for a Job:</label>
+        <select id="job" name="job" required>
+          <option value="">Select Job</option>
+          <option value="software_engineer">Software Engineer</option>
+          <option value="web_developer">Web Developer</option>
+          <option value="data_analyst">Data Analyst</option>
+          <option value="network_engineer">Network Engineer</option>
+          <!-- Add more options as needed -->
+        </select>
+
+        <label for="profile_pic">Profile Picture:</label>
+        <input
+          type="file"
+          id="profile_pic"
+          name="profile_pic"
+          accept="image/*"
+          required
+          onchange="previewImage(event)"
+        />
+        <div id="preview"></div>
+
+        <input type="submit" value="Submit" class="btn" />
+      </form>
+    </div>
+    <script>
+      function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+          var preview = document.getElementById("preview");
+          preview.innerHTML = '<img src="' + reader.result + '">';
+          preview.style.display = "block";
+        };
+        reader.readAsDataURL(event.target.files[0]);
+      }
+    </script>
+  </body>
+</html>
