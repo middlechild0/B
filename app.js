@@ -23,11 +23,11 @@ app.use(express.static(__dirname + '/public'));
 // Routes
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/', router);
+app.use("/", router);
 
 
 
-const PORT = process.env.PORT || 4000;
+const PORT =4000;
 
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);

@@ -57,5 +57,47 @@ const handleNormalUserRegistration = async (req, res) => {
     }
   };
 
-  module.exports = {handleNormalUserRegistration }; 
+  const handleNormalUserLogin = async (req, res) => {
+    const { email, password } = req.body;
+  
+    try {
+      // check if user with email exists
+      const user = await findUserByEmail(email);
+      // something is returned, then such user exists
+      if (!user) {
+        return res.status(400).json({ message: "Invalid email or password" });
+      }
+      // compare password
+      const match = await bcrypt.compare(password, user.password);
+      if (!match) {
+        return res.status(400).json({ message: "Invalid email or password" });
+      }
+      // jwt payload
+      const payload = {
+        user_id: user.id,
+        email: user.email,
+        role: user.role,
+      };
+      // create token
+      const token = jwt.sign(payload, process.env.JWT_SECRET, {
+        expiresIn: "1h",
+      });
+      return res.status(200).json({ token });
+    } catch (error) {
+      console.log(error);
+      return res.status(500).json({ message: "Internal Server error" });
+    }
+  }
+
+  const handleCompanyRegistration = async (req, res) => {
+    const {   } = req.body;
+  
+try {
+  
+} catch (error) {
+  
+}
+  }
+
+  module.exports = {handleNormalUserRegistration, handleNormalUserLogin }
   
