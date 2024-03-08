@@ -1,5 +1,5 @@
-const Router = require('express');
-const router = Router();
+const express = require('express');
+const router = express.Router();
 
 
 const {handleNormalUserRegistration} =  require ('./../controllers/userController') ;
@@ -10,4 +10,4 @@ router.post(
     handleNormalUserRegistration
   );
 
-  module.exports = {router};
+  module.exports = router;

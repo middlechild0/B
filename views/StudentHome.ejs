@@ -1,278 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
-    <title>Student Portal</title>
-  </head>
-  <body>
-    <%- include('layout') %>
-    <header class="header1">
-      <div class="logo-container">
-        <img
-          src="/Images/Logo1.png"
-          alt="Building Bridges Initiative"
-          class="logo1"
-        />
-      </div>
-      <nav>
-        <a class="hyperlink" href="">Dashboard</a>
-        <!--Dashboard showcases the student details within the page-->
-        <a class="hyperlink" href="">Academics</a>
-        <!--Here the education level , skills , certificates earned and grades attained are displayed-->
-        <a class="hyperlink" href="">Mentorship</a>
-        <!--Here we see the mentorship application progress i.e Approved, Pending ,New application-->
-        <a class="hyperlink" href="">Internship</a>
-        <!--Here the internshp application progress is displayed// This is upto the Company approval-->
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Images/Logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="Aos.css" />
+    <link rel="stylesheet" href="/home.css" />
+    <title>Students Portal</title>
+</head>
+<body>
+  <%- include('layout') %>
+    <header data-aos="fade">
+        <nav>
+            <ul class="left">
+                <li><a href="#" class="active"><img class="logo" src="/Images/logo-black.png" alt="mylogo"></a></li>
+            </ul>
+            <h1 id="Title">Building Bridges Initiative</h1>
+            <ul class="right">
+                <li><a href="#dashboard" class ="hire">Dashboard</a></li>
+                <li><a href="#stats" class ="hire">Stats</a></li>
+                <li><a href="#skills" class ="hire">Skills</a></li>
+                <li><a href="#mentor" class ="hire">Mentor</a></li>
+                <li><a href="#company" class ="hire">Company</a></li>
+                
+            </ul>
+        </nav>
+        
     </header>
-    <section id="academics" class="sect-container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
-        culpa accusamus cupiditate, alias neque aliquid ullam eveniet hic atque
-        explicabo odit error necessitatibus dicta veniam enim saepe! Voluptatum,
-        voluptates? Quia facilis, itaque, consequuntur ullam, ipsum dolorum
-        numquam minima nemo delectus illo hic consectetur quae nostrum tempore
-        voluptas culpa error? Doloribus quod aperiam quam rerum quos neque illo
-        exercitationem excepturi. Ab iusto reprehenderit iure odio harum minus
-        tenetur ea, doloribus vitae voluptate esse aliquam consectetur labore
-        maxime exercitationem repellat, voluptatem eaque. Cum iusto, facilis
-        esse praesentium incidunt beatae? Minus, ad? Rem eveniet numquam
-        provident voluptas labore veritatis quas quod explicabo sint iure
-        nesciunt maxime dolore ea laudantium velit, dolorum soluta quo incidunt
-        odio expedita temporibus. Vitae obcaecati ipsum atque officia? Delectus
-        rerum, sint dolore illum minus incidunt optio esse distinctio odio
-        aliquam voluptatibus deleniti molestias officia architecto, facere
-        debitis magnam commodi recusandae accusantium. Minus quas, repellendus
-        deleniti sapiente nihil nostrum! Aperiam odio exercitationem sapiente
-        cumque autem, illo ex. Nihil, itaque, iusto maxime nobis tempore alias
-        eveniet cum odit consectetur aperiam ab hic quas animi praesentium
-        architecto totam, eaque rerum aliquam. Deserunt qui, fuga ipsa quis
-        laborum eius nihil, aperiam rem magnam dolorem laudantium debitis totam?
-        Dolorem eos pariatur iure earum, quos perferendis minima, quaerat
-        facilis ut suscipit quia, quo veritatis. Sunt ducimus sint voluptatem
-        impedit ad, consectetur aut odio expedita, pariatur perspiciatis hic
-        dolor at magnam architecto! Non iure unde beatae cupiditate molestiae
-        expedita aspernatur, minus repellendus quo natus odit. Magni laborum,
-        aperiam consectetur ad, vel est rerum nisi perferendis nobis doloribus
-        qui quibusdam dolores suscipit, maiores cupiditate esse quod cum
-        praesentium! Animi dignissimos veritatis doloribus maiores fuga
-        voluptatem quasi. Mollitia reiciendis amet omnis, sed fugit architecto,
-        quo labore alias minus tempore exercitationem id debitis voluptatum
-        officiis quod fuga consectetur saepe numquam incidunt, et ullam? Nam
-        placeat qui aliquid reprehenderit? Quasi consequuntur tempore odit amet
-        voluptatibus, fuga incidunt necessitatibus veritatis consequatur vero.
-        Earum iste a aliquid culpa deleniti voluptas vel similique optio
-        excepturi, eveniet aperiam illo incidunt mollitia molestias natus?
-        Labore inventore pariatur ea, harum facere expedita ad! In eveniet
-        distinctio, voluptatem similique illo rem. In vero voluptatem autem
-        molestiae illum molestias ea distinctio aperiam quo rem eligendi,
-        provident rerum? Quia possimus nisi eaque dolorem consequuntur. Laborum
-        eos corrupti praesentium adipisci numquam doloribus ipsa temporibus
-        suscipit ratione facere consequuntur placeat, recusandae, cupiditate
-        rerum iste eum quo ab perspiciatis perferendis veritatis. Quis, odio
-        neque doloribus porro pariatur deserunt, dignissimos tenetur dolores
-        facere tempore culpa ex dolorum vitae quasi. Quidem reiciendis maiores
-        iusto veniam, animi illum vero dolores fugiat ad atque expedita.
-        Doloribus iure, ullam minima at aperiam itaque voluptatem perferendis
-        voluptates officia soluta velit quia blanditiis in veritatis excepturi
-        dolorum debitis repudiandae facilis, sit, nostrum nisi quidem
-        praesentium. Quo, vel porro? Laudantium consequatur reiciendis nam
-        dicta, voluptatem aliquam. Quia, voluptates voluptate aliquid adipisci
-        mollitia delectus in corporis numquam itaque odio sed minima, quos
-        nesciunt ratione pariatur nulla, doloribus quis dolore necessitatibus.
-        Cum, iste repellat? Eius explicabo culpa magni cupiditate! Impedit
-        recusandae pariatur in repellat facere aliquid consectetur magni
-        laudantium quam similique ab odit asperiores, quod ipsum eum eius libero
-        nam eos? Totam ea repudiandae, minus tenetur odio dolores eos odit
-        excepturi deleniti sequi, libero numquam ipsum, obcaecati non minima
-        animi architecto dolore. Quaerat quo magnam quam excepturi ea! Placeat,
-        earum sit? Autem harum doloremque mollitia quisquam architecto
-        laboriosam ipsum itaque sit ea eligendi expedita ex omnis nihil minus
-        ipsa inventore adipisci perspiciatis, minima aspernatur! In error
-        similique excepturi, necessitatibus assumenda repellendus. Veritatis
-        saepe eveniet aliquid maiores eius sit voluptatibus unde quis suscipit
-        inventore quam amet distinctio, blanditiis ipsa quidem quae harum,
-        sapiente rem. Incidunt provident laboriosam est mollitia, iste nam
-        explicabo. Consequatur cum possimus quae, delectus ipsum quam! Magnam,
-        ducimus voluptate. Culpa labore cupiditate ratione inventore incidunt
-        non, natus, placeat quidem sint vero cum? Consequatur animi dolores
-        rerum corrupti odio illo. Enim magnam quaerat quibusdam est eaque quod
-        itaque fugiat qui, veniam animi? Accusantium sit, dolore nostrum illo
-        voluptatem modi, aperiam dicta, magni repellendus voluptatibus enim quis
-        vitae alias! Eaque, iste. Dolores, facere reprehenderit soluta ducimus,
-        excepturi deserunt repellat tenetur sequi nobis omnis iusto dolorum!
-        Ducimus dolorem quod adipisci vitae libero doloribus, saepe quaerat
-        autem, similique eius quasi a accusantium corrupti? Minima illo ipsum
-        quas asperiores obcaecati eum nesciunt corporis accusantium officiis
-        repellendus beatae enim culpa maxime neque magni, incidunt at iste sed
-        cum veritatis minus sunt! Blanditiis obcaecati nam atque? Perspiciatis
-        alias, quisquam non repellendus ad necessitatibus illo. Labore
-        recusandae cumque, fugit exercitationem, alias laborum aperiam iste
-        aliquid porro quis blanditiis inventore eligendi! Ab voluptates iure
-        placeat est ratione totam! Est non quidem totam, laborum obcaecati omnis
-        aliquam iure nobis aut odit hic facere temporibus. Debitis ab, facere
-        voluptas sit aspernatur recusandae tenetur vero vel deserunt fugiat
-        dolorum, blanditiis possimus? Consectetur corporis nobis qui vero
-        tempore eum mollitia sint, quas voluptates, aut maxime ex labore eos,
-        libero laudantium. Ad ratione, modi ex odio explicabo eveniet
-        consequatur quia alias error at. Aspernatur necessitatibus quis mollitia
-        voluptatum beatae laboriosam autem ut ab, omnis laborum labore sequi,
-        est hic, eum perspiciatis laudantium ipsam nam assumenda fugiat itaque?
-        Sequi recusandae voluptatum officia tempore non! Temporibus officia nam
-        dolore ea. Nihil cum voluptate recusandae est blanditiis illum! Id
-        autem, accusantium obcaecati fugit ipsum sint molestiae laboriosam
-        soluta odit culpa suscipit at. Debitis iste minima maxime? Voluptas esse
-        nulla voluptatum doloremque quia illo assumenda non, consequatur aut
-        illum nisi aliquid nobis aperiam. Illum ratione maxime at. Fuga, modi
-        quisquam debitis corrupti sit minima excepturi labore eos.
-      </p>
+        <section data-aos="fade-up" id="dashboard">
+            <div class="container">
+                  <div class="image-container">
+                    <img class="my-image" src="/Images/user.png" alt="Me">
+                </div>
+                <div class="details">
+                    <p>Name: <span id="student-name"> Zabba Datch</span></p>
+                    <p>Course: <span id="field">Information Technology</span></p>  
+                    <p>Education level: <span id="edLevel">Undergraduate</span></p>
+                    <p>Employment Status: <span id="Employment Status"> Unemployed</span></p>
+                    <p>Field: <span id="field">Software Development</span></p>
+                    <p>Joined: <span id="field">2024</span></p>  
+                </div>
+            </div>
+        </section>
+    
+        <section data-aos="fade-up" id="stats">
+            <h2><u>Stats</u></h2>
+            <p>Units completed:</p>
+            <div class="cards">
+                <div class="skill-card">
+                    <img src="/Images/telephone.png" alt="">
+                    <h2 id="field">Mobile App development</h2>
+                    <h2 id="period">Months</h2>
+                    
+                </div>
+                <div class="skill-card">
+                    <img src="/Images/user.png" alt="">
+                    <h2 id="field">Customer relations</h2> 
+                    <h2 id="period">Weeks</h2>                   
+                </div>
+            </div>
+            <br><br><hr>
+            <p>Units registered:</p>
+            <div class="cards">
+              <div class="skill-card">
+                  <img src="/Images/github.png" alt="">
+                  <h2 id="field">Software development</h2>
+                  <h2 id="period">Months</h2>
+                  
+              </div>
+              <div class="skill-card">
+                  <img src="/Images/mongodb.png" alt="">
+                  <h2 id="field">Database Management</h2> 
+                  <h2 id="period">Months</h2>                   
+              </div>
+          </div>
+          <h2>Progress Report</h2>
+          <p>You are <span id="progress">20%</span> complete with the course</p>
+        </section>
+    
+        <section data-aos="fade-up" id="skills">
+            <h2>Skills</h2>
+            <p> Skills gained are:</p>
+            <div class="cards">
+            <div class="skill-card">           
+              <h2>Python</h2>
+          </div>
+          <div class="skill-card">             
+              <h2>CSS</h2>
+          </div>
+          <div class="skill-card">              
+              <h2>Django</h2>
+          </div>
+           <div class="skill-card">           
+              <h2>Flutter</h2>
+          </div>
+          <div class="skill-card">             
+              <h2>GIT</h2>
+          </div>
+          <div class="skill-card">              
+              <h2>HTML</h2>
+          </div>
+          <div class="skill-card">             
+              <h2>JavaScript</h2>
+          </div>
+        </div>
+        </section>
+    
+        <section data-aos="fade-up " id="mentor">
+            <h2>Mentors</h2>
+            <p>Approved Mentors.</p>
+            <div class="cards">
+              <div class="skill-card">
+                <img src="/Images/user.png" alt="">
+                <h2 id="username">Students Mentor</h2>
+                <h2 id="field">Software Development</h2>
+            </div>
+            <div class="skill-card">
+                <img src="/Images/user.png" alt="">
+                <h2 id="username">Aletta Oken</h2>
+                <h2 id="field">Database Management</h2>
+            </div></div><br><br>
+            <p>Pending mentors</p>
+            <div class="cards">
+            <div class="skill-card">
+              <img src="/Images/user.png" alt="">
+              <h2 id="username">Kongi Oloo</h2>
+              <h2 id="field">Database Management</h2>
+              <a href="#"><button class="hire">Remove request</button></a>
+                   
+          </div>
+          <div class="skill-card">
+              <img src="/Images/user.png" alt="">
+              <h2 id="username">Mia Kwafila</h2>
+              <h2 id="field">Software Development</h2>
+              <a href="#"><button class="hire">Remove request</button></a>
+          </div>
+        </div>
+        </section>
+        <section data-aos="fade-up" id="company">
+            <h2>Company</h2>
+           <p><strong>You applied at this company:</strong> </p> 
+           <div class="cards">
+            <div class="skill-card">
+                <img src="/Images/Logo1.png" alt="">
+                <h2 id="username">Building Bridges Enterprises</h2>
+                <h2 id="field">Software Developer</h2>
+                <p>Status: <span id="status"> Pending</span></p>
+                <a href="#"><button class="hire">Restart Application</button></a>
+            </div>
+           </div>
+            <br><br><br>
+            <p><strong>Available jobs:</strong> </p>
+            <div class="cards">
+                <div class="skill-card">
+                    <img src="/Images/Logo1.png" alt="">
+                    <h2 id="username">Building Bridges Enterprises</h2>
+                    <h2 id="field">Software Developer</h2>
+                    <a href="#"><button class="hire">Apply Now</button></a>
+                </div>
+                <div class="skill-card">
+                    <img src="/Images/Logo1.png" alt="">
+                    <h2 id="username">Building Bridges Enterprises</h2>
+                    <h2 id="field">HR Manager</h2>
+                    <a href="#"><button class="hire">Apply Now</button></a>
+                </div>
+                <div class="skill-card">
+                    <img src="/Images/Logo1.png" alt="">
+                    <h2 id="username">Building Bridges Enterprises</h2>
+                    <h2 id="field">Database Administrator</h2>
+                    <a href="#"><button class="hire">Apply Now</button></a>
+                </div>
+            </div>
+     
+          </section>
+       
     </section>
-    <section id="Academics" class="sect-container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda saepe
-        culpa quisquam repellendus. Quo, nam repellendus? Cum culpa iste
-        aliquid, sit velit voluptatibus modi quisquam, obcaecati veritatis
-        aspernatur in explicabo! Doloremque commodi nihil ut cupiditate
-        excepturi voluptate itaque assumenda tempore eius vel inventore culpa
-        voluptatibus, animi in beatae! Odio iusto nesciunt commodi dolorem id
-        ipsa veniam ipsum rerum ipsam quo? Vel maiores, ipsa nam earum
-        asperiores rem voluptas assumenda quam soluta autem eveniet quasi cumque
-        quos alias molestiae totam accusamus. Saepe voluptates cupiditate
-        quaerat in quia reprehenderit minima obcaecati nisi! Magnam ratione,
-        quos, necessitatibus tempore vero expedita impedit dolore sit
-        consectetur reprehenderit mollitia, tempora fugiat veniam rem harum
-        eligendi animi voluptas modi commodi! Odio dolor debitis laudantium
-        mollitia in tempore. Saepe ipsum aspernatur maxime, rem reiciendis eius
-        amet, cupiditate accusamus, neque officiis nihil nobis similique quasi
-        excepturi eveniet reprehenderit expedita assumenda! Obcaecati excepturi
-        eius necessitatibus minima rerum, soluta ad accusantium? Accusantium,
-        labore tempore. Voluptatibus autem, eum delectus quam officiis itaque
-        eligendi iure ut error sunt hic, ipsum quo reiciendis sint corrupti
-        impedit numquam, quasi maiores nostrum ipsam voluptate voluptatum
-        quibusdam! Quam non dolore voluptas expedita, ab modi voluptate adipisci
-        ad debitis a eos blanditiis id facilis nostrum tempore. Voluptate dolor
-        nobis atque iusto, perspiciatis labore! Quo incidunt similique laborum
-        eligendi? Magnam libero quis animi ipsa. Eius, omnis deleniti eos odio
-        in nulla, corrupti accusantium consectetur facere modi reprehenderit
-        perferendis non veniam voluptates autem hic quibusdam quam, similique
-        natus architecto iure? Qui adipisci odit odio asperiores, aperiam enim
-        id delectus ad, in quidem omnis assumenda incidunt tempora natus aut
-        vero officia corrupti quisquam temporibus esse amet. Et natus incidunt
-        consequatur quidem. Nam, at quia fugit tempore tempora harum
-        exercitationem iusto voluptatem asperiores ab vel magni porro qui
-        quaerat culpa numquam officiis nisi aspernatur? Facere minima qui
-        accusamus numquam fugit pariatur exercitationem? Temporibus ex facere,
-        architecto consequatur est nemo voluptatum ducimus voluptatibus vitae ut
-        quis accusamus deleniti assumenda sint laboriosam adipisci sed culpa
-        numquam, deserunt tempora minus quos fugit provident amet. Nesciunt?
-        Saepe quidem animi ea fugit repellendus consectetur enim, id dolorum
-        voluptas omnis et qui eum sed commodi voluptate at molestiae quasi nam
-        culpa ducimus fugiat quos! Quam voluptates quidem architecto. Architecto
-        sunt fuga cumque minus quam velit corrupti, molestiae ad voluptates ea
-        nisi expedita ipsum. Rerum ullam eaque facilis nihil quo? Ratione
-        assumenda necessitatibus et expedita, impedit hic pariatur nesciunt.
-        Atque, sequi possimus sint in debitis eaque animi neque delectus
-        deserunt vitae! Nostrum veniam exercitationem, quia dignissimos
-        accusamus cumque vitae molestias! Quibusdam nesciunt unde autem
-        molestias consectetur cumque expedita aperiam! Iusto porro modi odit
-        illo illum reiciendis enim hic corporis voluptatibus ut et alias
-        recusandae libero, doloremque fugit nam sed. Eaque perspiciatis neque
-        quis voluptatibus sint pariatur nulla laudantium quaerat. Expedita,
-        nulla? Assumenda animi ea, dolorum odit veniam, officia sapiente vel
-        suscipit repellendus tempora est sed voluptas quibusdam quam temporibus
-        iusto ducimus incidunt eius recusandae ex omnis culpa mollitia deserunt?
-        Deleniti dolorum molestias nemo nostrum deserunt magni, nisi quod
-        incidunt fuga dignissimos. Quidem autem repellat praesentium fugiat
-        provident ullam natus hic animi, laudantium, in eligendi mollitia ex
-        ipsa sed id. Eum ad est architecto dolorum placeat nobis eveniet, ipsum
-        eligendi error itaque cum. Ad, ab eligendi, saepe libero perferendis
-        sunt corrupti autem, facilis aperiam natus nostrum atque qui commodi
-        neque? Numquam, optio ex, illo in ipsam ad eos dolor, qui possimus
-        necessitatibus sed! Perferendis explicabo, provident corrupti
-        accusantium sit nemo vero deleniti ad ex amet quam libero magni
-        reiciendis impedit! Suscipit labore quae expedita amet praesentium fugit
-        pariatur iure! Sunt, minima quam. Molestiae repellendus hic sint eos
-        cumque delectus quam quisquam necessitatibus. Minus architecto, numquam
-        repellat consequatur in distinctio rerum.
-      </p>
+
+    <section id="footer" data-aos="fade-up">
+        <div>
+            <a href="https://github.com/Brandon-Datch" target="_blank"><img class="icon" src="/Images/github.png" alt="Github"></a>
+            <a href="https://www.facebook.com/isaac.datch.3"target="_blank"><img class="icon" src="/Images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/sir_durche/"target="_blank"><img class="icon" src="/Images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/isaac-brandon-datch-947067288/"target="_blank"><img class="icon" src="/Images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <p>&copy; 2024 Brand3n Solutions. All rights reserved.</p>
     </section>
-    <section id="Mentorship" class="sect-container">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-        explicabo esse sequi in deleniti. Dolore totam optio facilis laboriosam
-        odio, pariatur amet, deserunt, explicabo velit accusamus nihil sequi ex
-        sed. Exercitationem, totam assumenda. Ab, consectetur cupiditate libero
-        veritatis illum est, accusantium blanditiis eos atque amet neque
-        consequuntur tempora distinctio, culpa ullam? Ratione consequatur,
-        officia eligendi quisquam vero adipisci ullam exercitationem! Possimus,
-        quia accusantium aperiam nesciunt saepe maiores, id perferendis fugit ad
-        veritatis autem? Nihil, necessitatibus rerum, aliquid maiores expedita,
-        laboriosam labore debitis distinctio officiis itaque animi. Fugiat
-        commodi a sunt. Aperiam iste eveniet perferendis animi quaerat
-        dignissimos excepturi architecto sapiente possimus quod. Minus,
-        accusamus velit nam exercitationem veritatis, nesciunt sapiente aliquam
-        harum hic nisi enim tenetur numquam, debitis eveniet dolore! Voluptas,
-        quasi possimus voluptates nisi voluptatibus fugit provident voluptatum
-        alias vel delectus explicabo labore aut, et ea enim consectetur quam
-        fugiat odio esse veniam commodi at. Cumque praesentium similique
-        voluptate. Nobis aspernatur dolore est labore impedit corrupti sit in,
-        hic natus dolor sequi soluta ipsum. Expedita quis adipisci odio
-        perferendis laboriosam praesentium amet necessitatibus ducimus provident
-        distinctio in, ea porro. Ratione, harum explicabo animi accusamus
-        molestiae voluptatum libero possimus quod amet alias dicta distinctio
-        facere suscipit dignissimos quam aperiam impedit magnam modi saepe
-        tenetur iure rerum repellendus! Deleniti, quos architecto! Accusantium
-        nihil error dicta qui voluptatibus laboriosam ut officia voluptatum
-        repellat asperiores. Inventore obcaecati omnis veritatis amet dolor. Cum
-        nemo vero expedita ducimus vel. Praesentium magnam architecto blanditiis
-        sunt incidunt! Ex neque assumenda tenetur laboriosam qui, voluptatum,
-        porro impedit laborum accusamus recusandae et consequuntur dignissimos
-        dolorum, maiores dicta! Architecto fugit facere quidem totam aspernatur
-        molestiae consequatur vel est quae assumenda? Molestiae non, velit
-        temporibus ipsum ad eos mollitia molestias saepe adipisci natus id sint,
-        dolor maxime officia, voluptate ratione! Aut, illum consequuntur
-        reiciendis aliquid deserunt eum vel perferendis accusamus nihil?
-      </p>
-    </section>
-    <section id="internship" class="sect-container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        molestias fugiat aperiam aut repellat ad, nemo optio beatae illo
-        possimus enim, officia aspernatur. Soluta nobis assumenda molestias,
-        officiis sapiente accusantium? Laborum dolorem culpa debitis
-        reprehenderit ipsam minus nam adipisci harum optio libero veniam quo
-        iusto, perspiciatis a explicabo quasi corporis. Officiis cum nisi
-        aspernatur vero, optio voluptates exercitationem repellendus quibusdam!
-        Enim a vero non nesciunt sunt dignissimos fuga dolorum fugit eius
-        similique. Numquam, velit? Unde officiis praesentium ex assumenda
-        doloribus repellendus repellat culpa eligendi fugiat, omnis id
-        voluptatem ducimus hic! Est enim eum maxime nisi soluta impedit
-        laudantium voluptatum odio. Perferendis natus quae officia. Vel
-        recusandae necessitatibus quod nobis porro sunt et voluptates quasi
-        repellat voluptatibus, sint, numquam facilis esse! Suscipit, earum
-        debitis voluptas accusantium cupiditate quod quidem nesciunt deserunt
-        officiis non, id enim voluptates corrupti, similique commodi velit
-        voluptatum eaque inventore. Libero voluptates asperiores modi incidunt
-        delectus numquam inventore. Dolor labore non ipsa ratione at maiores
-        quos cumque harum. Neque saepe labore, quam obcaecati accusamus aliquam
-        enim sint eius possimus culpa hic harum repellendus dignissimos
-        asperiores ad vitae inventore. Sunt, dolor incidunt iusto doloremque
-        facere dicta porro consequatur, sequi pariatur repellat eveniet debitis
-        nihil ut fuga? Cupiditate dolorum quidem recusandae in, explicabo animi
-        ut facere voluptatem repellendus beatae suscipit? At in provident
-        placeat itaque ullam adipisci ipsam pariatur doloribus reprehenderit
-        debitis, numquam quos consectetur autem inventore hic dolores nemo
-        officia. Consectetur laborum laboriosam, ut cum eos reprehenderit sunt.
-        Repellendus. Iure ea eum corporis officiis quisquam soluta, voluptatibus
-        voluptates pariatur! Eum, maiores aliquid. Dolorum enim fugit, maxime
-        deleniti illo nam veritatis consequatur cum quia repellat nihil. Atque
-        officia labore ipsam. Culpa cupiditate asperiores corrupti dolorem
-        expedita quam ipsa delectus, magni dolores quasi est blanditiis ullam
-        laborum quos dolore tempore fuga dolor perferendis nemo, eveniet
-        temporibus voluptatum. Ratione repellendus similique dolore?
-      </p>
-    </section>
-  </body>
+
+   
+</body>
 </html>
